@@ -35,8 +35,8 @@ const Footer = ({
     }
   ],
   newsletter = {
-    title: 'Your Source for Green Energy Updates',
-    description: 'Stay in the loop with our Green Horizon newsletter, where we deliver bite-sized insights into the latest green energy solutions.',
+    title: 'Get in touch with us',
+    description: 'Stay in the loop with our  newsletter, where we deliver bite-sized insights into the latest in business and careers.',
     placeholder: 'Your e-mail...',
     buttonText: 'Get in touch'
   },
