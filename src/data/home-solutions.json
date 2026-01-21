@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "EV charging",
+    "description": "EVs use electricity as a power source, which can be generated from renewable energy sources. Our solutions help reducing greenhouse gas emissions in the transportation sector.",
+    "icon": "ev-charging",
+    "link": "#"
+  },
+  {
+    "id": 2,
+    "title": "Solar Energy",
+    "description": "Solar panels convert sunlight into electricity. Photovoltaic (PV) cells on these panels capture the energy from the sun and convert it into electrical power.",
+    "icon": "solar",
+    "link": "#"
+  },
+  {
+    "id": 3,
+    "title": "Wind Energy",
+    "description": "Wind turbines harness the kinetic energy of the wind to generate electricity. Wind farms with multiple turbines are commonly used to produce large amounts of clean energy.",
+    "icon": "wind",
+    "link": "#"
+  },
+  {
+    "id": 4,
+    "title": "Hydropower",
+    "description": "This technology uses the energy from flowing water, such as rivers and dams, to turn turbines and generate electricity. It's one of the oldest forms of renewable energy.",
+    "icon": "hydro",
+    "link": "#"
+  }
+]

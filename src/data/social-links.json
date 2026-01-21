@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Facebook",
+    "href": "#",
+    "ariaLabel": "Visit our Facebook page"
+  },
+  {
+    "name": "Instagram",
+    "href": "#",
+    "ariaLabel": "Visit our Instagram profile"
+  },
+  {
+    "name": "LinkedIn",
+    "href": "#",
+    "ariaLabel": "Visit our LinkedIn profile"
+  }
+]

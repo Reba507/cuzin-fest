@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Renewable Energy Researcher",
+    "department": "Research and Development (R&D)",
+    "location": "San Francisco, US",
+    "type": "Full-Time"
+  },
+  {
+    "id": 2,
+    "title": "Materials Scientist",
+    "department": "Research and Development (R&D)",
+    "location": "San Francisco, US",
+    "type": "Full-Time"
+  },
+  {
+    "id": 3,
+    "title": "Renewable Energy Engineer",
+    "department": "Engineering",
+    "location": "San Francisco, US",
+    "type": "Full-Time"
+  },
+  {
+    "id": 4,
+    "title": "Solar Engineer",
+    "department": "Engineering",
+    "location": "San Francisco, US",
+    "type": "Full-Time"
+  },
+  {
+    "id": 5,
+    "title": "Wind Energy Engineer",
+    "department": "Engineering",
+    "location": "San Francisco, US",
+    "type": "Full-Time"
+  }
+]

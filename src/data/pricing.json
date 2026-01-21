@@ -1,0 +1,169 @@
+{
+  "directors": [
+    {
+      "name": "Tshego Mothibi",
+      "company": "Entlekago Holdings (PTY) Ltd",
+      "phone": "0715880283",
+      "email": "tmothibi785@gmail.com"
+    },
+    {
+      "name": "Kgatlhiso Mosii",
+      "company": "KayyNailed.It",
+      "phone": "0846265516",
+      "email": "kgatlhisomosii30@gmail.com"
+    },
+    {
+      "name": "Oratile Mckingly Montshiwa",
+      "company": "Mckingly Trading Projects",
+      "phone": "0670920223",
+      "email": "oratile.montshiwa@gmail.com"
+    },
+    {
+      "name": "Ontletse Daisy",
+      "company": "KK Business Enterprise",
+      "phone": "0729533236",
+      "email": "daisyontletse@gmail.com"
+    },
+    {
+      "name": "Gonnamang Priscilla Monye",
+      "company": "GOLA MONNYE ELC",
+      "phone": "0768162581",
+      "email": "golamonnyeelc@gmail.com",
+      "alternativeEmail": "gonniemonye@gmail.com"
+    },
+    {
+      "name": "Tshepo Kgosi Mosii",
+      "company": "Kgosinkwe Trading Enterprise (PTY) Ltd",
+      "phone": ["0603662166", "0697438687"],
+      "email": "mtshepomosii@gmail.com"
+    },
+    {
+      "name": "Oarabile Kokonyane",
+      "company": "Modisakgotlha Farming and Projects (PTY) Ltd",
+      "phone": "+27829249233",
+      "email": "kokonyaneoarabile@gmail.com"
+    },
+    {
+      "name": "Kegaisamang Mosii",
+      "company": "KCT Trading Enterprise (PTY) Ltd",
+      "phone": "0762988236",
+      "email": "mosiikegaisamang@gmail.com"
+    },
+    {
+      "name": "Tshidi Kokonyane",
+      "company": "TK Crochet",
+      "phone": "0733993383",
+      "email": "senatletshidi@gmail.com"
+    },
+    {
+      "name": "Kitso Ikgopoleng",
+      "company": "Marketing Services",
+      "phone": "0842842015",
+      "email": "kitsomosii.km@gmail.com"
+    },
+    {
+      "name": "Moemedi Ikgopoleng",
+      "company": "Accounting, Tax Consultancy & Advisory",
+      "phone": "0782900481",
+      "email": "moemedii7@gmail.com"
+    },
+    {
+      "name": "Kaelo Monye, Kitso Monye, Tshiamo Gobolawamang, Keatlaretswe Ramotlatsi, Ketlametswe Mohapi",
+      "company": "Quadro K & M Agricultural Co-Op",
+      "coreBusiness": "Agriculture (Livestock, Crop & Bee Keeping)",
+      "phone": ["+27820887344", "+27712595007"],
+      "email": "motsagric@gmail.com"
+    },
+    {
+      "name": "Refiloe Tshabalala",
+      "company": "Bophepa Projects",
+      "phone": "0784045657",
+      "email": "bophepaprojects@gmail.com"
+    },
+    {
+      "name": "Refiloe Tshabalala",
+      "company": "Personal",
+      "phone": "0784045657",
+      "email": "refiloetshabalala21@gmail.com"
+    },
+    {
+      "name": "Thebe Monye",
+      "company": ["Sourcecode Clothing", "Peo Architects"],
+      "phone": ["0746964927", "0711828499"],
+      "email": ["thebe.monye@gmail.com", "thebe@peoarchs.com"]
+    },
+    {
+      "name": "Brian Podile",
+      "company": "BrianPod Solutions",
+      "phone": ["0621230390", "0715827233"],
+      "email": "brianpodile55@gmail.com"
+    },
+    {
+      "name": "Goone Monye",
+      "company": "Sheek Crochet",
+      "phone": ["0813993812", "0847936027"],
+      "email": "sasantle44@gmail.com"
+    },
+    {
+      "name": "Phatsimo Mosii",
+      "company": "Tyriie Solutions",
+      "phone": "0817254167",
+      "email": ["phatsimo@tyriie.co.za", "tyriie21@gmail.com"]
+    },
+    {
+      "name": "Kagontle Tshabalala",
+      "company": "Baker’s Daughter",
+      "phone": ["0781698152", "0723369436"],
+      "email": "tshabalala.kagontle@gmail.com"
+    },
+    {
+      "name": "Benju Podile",
+      "company": "Thulaganyo Trading Enterprise",
+      "phone": "0790799992",
+      "email": ["benjupodile55@gmail.com", "thulaganyop.tp@gmail.com"]
+    },
+    {
+      "name": "Kabelo Ngakanyane",
+      "company": "Metsi a Lewatle Holdings and Projects (PTY) Ltd",
+      "phone": "0787396435",
+      "email": "kebelongakanyane@gmail.com"
+    },
+    {
+      "name": "Katlego P Kokonyane",
+      "company": "Kaptured_kt.pearl",
+      "phone": "0646096189",
+      "email": "pearlkokonyane@gmail.com"
+    },
+    {
+      "name": "Molebogeng Monye",
+      "company": "MoSnap Studios",
+      "phone": "0677752817",
+      "email": "mosnap.studios@gmail.com",
+      "portfolio": "https://mosnapstudios007.weebly.com"
+    },
+    {
+      "name": "Phenyo Tshabalala",
+      "company": "Peloentle Logistics",
+      "phone": "0678542705",
+      "email": "sphanyophenyo@gmail.com"
+    },
+    {
+      "name": "Rebaone Kgakatsi & Refilwe Podile",
+      "company": "Mekgabo Events and Deco",
+      "phone": ["0787902206", "0662308908"],
+      "email": "fifipodile@gmail.com"
+    },
+    {
+      "name": "Podile Kalayame",
+      "company": "PodileKalayame Holdings (PTY) Ltd",
+      "phone": ["0786902206", "0662308908"],
+      "email": "wamepodile@gmail.com"
+    },
+    {
+      "name": "Delene Montshiwa",
+      "company": "Thutlo 99 Projects",
+      "phone": ["0823017962", "0691049404"],
+      "email": "thelinkenterprise1@gmail.com"
+    }
+  ]
+}

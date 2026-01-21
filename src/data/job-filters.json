@@ -1,0 +1,12 @@
+{
+  "departments": [
+    "All departments",
+    "Research and Development (R&D)",
+    "Engineering"
+  ],
+  "locations": [
+    "All locations",
+    "USA",
+    "Europe"
+  ]
+}

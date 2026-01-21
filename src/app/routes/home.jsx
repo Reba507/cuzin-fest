@@ -1,0 +1,166 @@
+import { useEffect, useState } from 'react';
+import AnnouncementBar from '@components/layout/announcement-bar';
+import CTASection from '@components/layout/cta-section';
+import { Navigation, Footer } from '@components/ui';
+import StatsSection from '@features/home/components/stats-section';
+import SolutionsSection from '@features/home/components/solutions-section';
+import CommitmentSection from '@features/home/components/commitment-section';
+
+// Simple Countdown Component
+function CountdownTimer() {
+  const targetDate = new Date('2026-06-16T09:00:00+02:00').getTime(); // SAST = UTC+2
+
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+
+  useEffect(() => {
+    const calculateTimeLeft = () => {
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference <= 0) {
+        return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+      }
+
+      return {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((difference % (1000 * 60)) / 1000),
+      };
+    };
+
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="bg-gradient-to-r from-green-600 to-lime-500 text-white py-12">
+      <div className="max-w-7xl mx-auto px-4 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          CuzinFest 2026 • 16 June • Mahikeng
+        </h2>
+        <p className="text-xl mb-8">Where family meets opportunity. Don't come alone — bring your cousins!</p>
+
+        <div className="flex justify-center gap-6 md:gap-12 flex-wrap">
+          {[
+            { value: timeLeft.days, label: 'Days' },
+            { value: timeLeft.hours, label: 'Hours' },
+            { value: timeLeft.minutes, label: 'Minutes' },
+            { value: timeLeft.seconds, label: 'Seconds' },
+          ].map((item, index) => (
+            <div key={index} className="bg-white/20 backdrop-blur-sm rounded-xl p-6 min-w-[100px]">
+              <div className="text-4xl md:text-5xl font-bold">{item.value.toString().padStart(2, '0')}</div>
+              <div className="text-sm md:text-base uppercase mt-2 opacity-90">{item.label}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-10">
+          <a
+            href="/tickets"
+            className="inline-block bg-white text-red-700 font-bold text-lg px-10 py-4 rounded-full hover:bg-gray-100 transition shadow-lg"
+          >
+            Secure Your Early Bird Spot →
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function HomePage() {
+  useEffect(() => {
+    document.title = 'CuzinFest — Family. Business. Future.';
+  }, []);
+
+  return (
+    <div className="antialiased bg-body text-body font-body">
+      <AnnouncementBar />
+
+      <Navigation
+        variant="hero"
+        backgroundImage="images/header-bg-waves.png"
+        hero={{
+          title: "CuzinFest",
+          subtitle:
+            "Building stronger family ties while creating real business opportunities. Connect with cousins, learn from entrepreneurs, tackle market challenges together — and grow sustainably.",
+          ctaText: "Explore Past Events",
+          ctaLink: "/#past-events",
+        }}
+      />
+
+      <main>
+        {/* Countdown — placed right after hero for maximum impact */}
+        <CountdownTimer />
+
+        {/* Updated stats — more relevant to CuzinFest */}
+        <StatsSection
+          stats={[
+            { number: "4,200+", label: "Cousins Connected" },
+            { number: "18", label: "Epic Gatherings" },
+            { number: "R6.2M+", label: "Opportunities Discussed" },
+            { number: "91%", label: "Say They'd Bring Family Again" },
+          ]}
+        />
+
+        {/* Quick "What Happens" section — very high value */}
+        <section className="py-16 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-6">
+            <h2 className="text-4xl font-bold text-center mb-12">What Actually Happens at CuzinFest</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                {
+                  title: "Cousin Speed Networking",
+                  desc: "Meet 20+ cousins in under an hour — real connections, real fast.",
+                },
+                {
+                  title: "Real Talk Panels",
+                  desc: "Money, markets, failures, comebacks — no filter, just truth.",
+                },
+                {
+                  title: "Family Feast & Chill",
+                  desc: "Good food, good music, good vibes. Business gets built over pap & vleis too.",
+                },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition"
+                >
+                  <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
+                  <p className="text-gray-600">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <SolutionsSection />
+        <CommitmentSection />
+
+        {/* Final strong CTA */}
+        <CTASection
+          title="Ready to level up with your cousins?"
+          subtitle="Early bird tickets for June 16, 2026 drop soon — join the waitlist and be first in line."
+          ctaText="Join the Waitlist Now"
+          ctaLink="/waitlist"
+        />
+      </main>
+
+      <Footer
+        variant="detailed"
+        backgroundImage="images/footer-waves-left-bottom.png"
+        companyName="CuzinFest"
+      />
+    </div>
+  );
+}
+
+export default HomePage;

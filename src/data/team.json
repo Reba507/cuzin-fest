@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Johnson",
+    "position": "CEO & Co-Founder",
+    "image": "fauna-assets/about/team-1.png",
+    "bio": "Leading the charge in sustainable energy solutions with over 15 years of experience in renewable energy."
+  },
+  {
+    "id": 2,
+    "name": "Michael Chen",
+    "position": "CTO & Co-Founder",
+    "image": "fauna-assets/about/team-2.png",
+    "bio": "Expert in clean technology development and innovation, bringing technical excellence to our green energy solutions."
+  },
+  {
+    "id": 3,
+    "name": "Emily Rodriguez",
+    "position": "Head of Engineering",
+    "image": "fauna-assets/about/team-3.png",
+    "bio": "Passionate about building scalable renewable energy systems that make a real environmental impact."
+  },
+  {
+    "id": 4,
+    "name": "David Kim",
+    "position": "Head of Research",
+    "image": "fauna-assets/about/team-4.png",
+    "bio": "Pioneering research in next-generation solar and wind technologies to shape the future of clean energy."
+  }
+]
