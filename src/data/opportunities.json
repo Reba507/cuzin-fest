@@ -1,0 +1,47 @@
+[
+  {
+    "id": "opp-1",
+    "title": "Food Stall Franchise",
+    "organization": "Mama's Kitchen Collective",
+    "location": "Mahikeng",
+    "type": "Franchise",
+    "description": "Low-cost food stall concept with proven margins — training and supply chain included.",
+    "link": "#"
+  },
+  {
+    "id": "opp-2",
+    "title": "Mobile Barber Pop-up",
+    "organization": "CuzinCuts",
+    "location": "On-site / Touring",
+    "type": "Pop-up",
+    "description": "Turn key barber pop-up with branding kit and scheduling app access.",
+    "link": "#"
+  },
+  {
+    "id": "opp-3",
+    "title": "Handmade Crafts Collective",
+    "organization": "Nkosi Makers",
+    "location": "Local Market",
+    "type": "Co-op",
+    "description": "Sell locally-made crafts with shared booth costs and joint marketing.",
+    "link": "#"
+  },
+  {
+    "id": "opp-4",
+    "title": "Agri-Input Microloan",
+    "organization": "GreenRoots Finance",
+    "location": "Nationwide",
+    "type": "Finance",
+    "description": "Microloans designed for small plot inputs, flexible repayment after harvest.",
+    "link": "#"
+  },
+  {
+    "id": "opp-5",
+    "title": "Community Event Photographer",
+    "organization": "Lens & Legacy",
+    "location": "Regional",
+    "type": "Service",
+    "description": "Low-cost starter kit and mentorship for event photography businesses.",
+    "link": "#"
+  }
+]

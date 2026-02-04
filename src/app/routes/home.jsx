@@ -5,6 +5,7 @@ import { Navigation, Footer } from '@components/ui';
 import StatsSection from '@features/home/components/stats-section';
 import SolutionsSection from '@features/home/components/solutions-section';
 import CommitmentSection from '@features/home/components/commitment-section';
+import opportunities from '@data/opportunities.json';
 
 // Simple Countdown Component
 function CountdownTimer() {
@@ -70,7 +71,83 @@ function CountdownTimer() {
           >
             Secure Your Early Bird Spot →
           </a>
+          <a
+            href="/opportunities"
+            className="ml-4 inline-block bg-transparent border border-white text-white font-semibold text-lg px-8 py-3 rounded-full hover:bg-white/10 transition shadow-sm"
+          >
+            Opportunities →
+          </a>
         </div>
+      </div>
+    </div>
+  );
+}
+
+// Simple opportunities slideshow component
+function OpportunitiesSlideshow({ items = [] }) {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (!items || items.length === 0) return;
+    const t = setInterval(() => setIndex(i => (i + 1) % items.length), 4000);
+    return () => clearInterval(t);
+  }, [items]);
+
+  if (!items || items.length === 0) return null;
+
+  const item = items[index];
+
+  const prev = () => setIndex(i => (i - 1 + items.length) % items.length);
+  const next = () => setIndex(i => (i + 1) % items.length);
+
+  return (
+    <div className="bg-gradient-to-r from-white/3 to-white/2 rounded-2xl p-4 text-white">
+      <div className="flex items-center justify-between mb-3">
+        <h3 className="text-lg font-bold">Featured Opportunities</h3>
+        <div className="flex items-center gap-2">
+          <button onClick={prev} aria-label="Previous" className="px-3 py-1 bg-white/5 rounded hover:bg-white/10">◀</button>
+          <button onClick={next} aria-label="Next" className="px-3 py-1 bg-white/5 rounded hover:bg-white/10">▶</button>
+        </div>
+      </div>
+
+      <div className="flex flex-col md:flex-row items-start gap-6">
+        <div className="flex-1 bg-black-50 p-6 rounded-xl">
+          <div className="flex items-start justify-between gap-4">
+              <div>
+                <h4 className="text-2xl font-bold mb-1">{item.title}</h4>
+                <div className="text-sm text-white/80">{item.organization} • {item.location}</div>
+              </div>
+              <div className="hidden md:block">
+                <div className="text-sm text-green-700 font-semibold bg-green-50 px-3 py-1 rounded">{item.type}</div>
+              </div>
+            </div>
+
+            <p className="mt-4 text-white/70">{item.description}</p>
+
+            <div className="mt-6 flex items-center gap-4">
+              <a href={item.link} className="text-red-300 font-semibold">Learn more →</a>
+              <button className="bg-red-700 text-white px-4 py-2 rounded-full">I'm Interested</button>
+            </div>
+        </div>
+
+        <div className="w-full md:w-64 flex-shrink-0">
+          <div className="text-sm text-gray-400 mb-2">Spotlight</div>
+          <div className="bg-white/5 p-4 rounded-lg">
+            <div className="text-sm text-green-700 font-semibold">{item.type}</div>
+            <div className="text-sm text-gray-300 mt-2">{item.organization}</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-4 flex items-center gap-2">
+        {items.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setIndex(i)}
+            className={`w-2 h-2 rounded-full ${i === index ? 'bg-red-700' : 'bg-white/20'}`}
+            aria-label={`Go to slide ${i + 1}`}
+          />
+        ))}
       </div>
     </div>
   );
@@ -94,6 +171,7 @@ function HomePage() {
             "Building stronger family ties while creating real business opportunities. Connect with cousins, learn from entrepreneurs, tackle market challenges together — and grow sustainably.",
           ctaText: "Explore Past Events",
           ctaLink: "/#past-events",
+          footer: <OpportunitiesSlideshow items={opportunities} />
         }}
       />
 
@@ -112,7 +190,7 @@ function HomePage() {
         />
 
         {/* Quick "What Happens" section — very high value */}
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-black-50">
           <div className="max-w-7xl mx-auto px-6">
             <h2 className="text-4xl font-bold text-center mb-12">What Actually Happens at CuzinFest</h2>
             <div className="grid md:grid-cols-3 gap-8">
@@ -134,7 +212,7 @@ function HomePage() {
                   key={i}
                   className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition"
                 >
-                  <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
+                  <h3 className="text-2xl font-bold mb-5">{item.title}</h3>
                   <p className="text-gray-600">{item.desc}</p>
                 </div>
               ))}

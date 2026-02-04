@@ -34,7 +34,7 @@ const SimpleNavigation = ({ showLogin = true }) => {
                 </div>
               </div>
               <button
-                className="md:hidden text-teal-900 hover:text-teal-800"
+                className="md:hidden p-2 rounded-full text-teal-900 hover:text-teal-800"
                 onClick={() => setMobileNavOpen(!mobileNavOpen)}
               >
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,7 +58,7 @@ const SimpleNavigation = ({ showLogin = true }) => {
               {showLogin && (
                 <Link className="inline-flex py-2.5 px-4 items-center justify-center text-sm font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" to={getRouteByName('login')}>Login</Link>
               )}
-              <button className="ml-6" onClick={() => setMobileNavOpen(!mobileNavOpen)}>
+              <button className="ml-6 p-2 rounded-full" onClick={() => setMobileNavOpen(!mobileNavOpen)}>
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M23.2 8.79999L8.80005 23.2M8.80005 8.79999L23.2 23.2" stroke="#1D1F1E" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
                 </svg>

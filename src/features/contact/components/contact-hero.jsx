@@ -82,7 +82,7 @@ function ContactHero() {
       <div className="container mx-auto px-4 relative">
         <div className="max-w-lg mx-auto">
           <div className="text-center mb-20">
-            <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl tracking-sm mb-6">
+            <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl tracking-sm mb-6">
               Contact us
             </h1>
             <p className="text-lg text-gray-700 mb-16">

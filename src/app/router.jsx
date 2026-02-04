@@ -9,6 +9,7 @@ const BlogSinglePage = lazy(() => import('@routes/blog-single'));
 const ContactPage = lazy(() => import('@routes/contact'));
 const LoginPage = lazy(() => import('@routes/login'));
 const RegisterPage = lazy(() => import('@routes/register'));
+const OpportunitiesPage = lazy(() => import('@routes/opportunities'));
 
 const LoadingFallback = () => (
   <div className="flex items-center justify-center min-h-screen">
@@ -41,6 +42,7 @@ const routes = [
   createRoute('/blog', BlogPage, 'blog', 'Blog', false),
   createRoute('/blog/:slug', BlogSinglePage, 'blog-single'),
   createRoute('/contact', ContactPage, 'contact', 'Contact', true),
+  createRoute('/opportunities', OpportunitiesPage, 'opportunities', 'Opportunities', true),
   createRoute('/login', LoginPage, 'login', 'Login'),
   createRoute('/register', RegisterPage, 'register', 'Register'),
 ];

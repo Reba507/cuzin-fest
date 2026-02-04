@@ -52,7 +52,7 @@ const Navigation = ({
                 </Link>
               </div>
             )}
-            <div className="hidden md:flex items-center space-x-8">
+              <div className="hidden md:flex items-center space-x-8">
               {navItems.map(item => (
                 <Link key={item.to} to={item.to} className="text-gray-700 hover:text-gray-900">
                   {item.label}
@@ -79,7 +79,8 @@ const Navigation = ({
     title = "Energizing a Green Future",
     subtitle = "Our commitment to green energy is paving the way for a cleaner, healthier planet. Join us on a journey towards a future where clean, renewable energy sources transform the way we power our lives.",
     ctaText = "See our solutions",
-    ctaLink = "/#solutions"
+    ctaLink = "/#solutions",
+    footer = null
   } = hero;
 
   return (
@@ -138,7 +139,7 @@ const Navigation = ({
 
                 {/* Mobile Menu Button */}
                 <button
-                  className="md:hidden text-white hover:text-lime-500 transition-colors duration-200"
+                  className="md:hidden p-2 rounded-full text-white hover:text-lime-500 transition-colors duration-200"
                   onClick={toggleMobileNav}
                   aria-label="Toggle mobile menu"
                   aria-expanded={mobileNavOpen}
@@ -157,11 +158,11 @@ const Navigation = ({
               <h1 className="font-heading text-5xl xs:text-7xl xl:text-8xl tracking-tight text-white mb-8">
                 {title}
               </h1>
-              <p className="max-w-md xl:max-w-none text-lg text-white opacity-80 mb-10">
+              <p className="max-w-md xl:max-w-none text-lg text-white drop-shadow-sm mb-10">
                 {subtitle}
               </p>
               <Link
-                className="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-teal-900 border border-lime-500 hover:border-white bg-lime-500 hover:bg-white rounded-full transition duration-200"
+                className="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-white border border-lime-500 hover:border-white bg-lime-500 hover:bg-white rounded-full transition duration-200"
                 to={ctaLink}
               >
                 {ctaText}
@@ -170,7 +171,14 @@ const Navigation = ({
           </div>
         </div>
 
-        {/* Mobile Navigation Overlay */}
+          {/* Optional hero footer (inserted by pages, e.g. opportunities slideshow) */}
+          {footer && (
+            <div className="container mx-auto px-4 pb-8">
+              {footer}
+            </div>
+          )}
+
+          {/* Mobile Navigation Overlay */}
         <div className={`${mobileNavOpen ? 'block' : 'hidden'} fixed top-0 left-0 bottom-0 w-full xs:w-5/6 xs:max-w-md z-50`}>
           <div
             className="fixed inset-0 bg-violet-900 opacity-20"
@@ -196,7 +204,7 @@ const Navigation = ({
               )}
               <div className="flex items-center">
                 <Link
-                  className="inline-flex py-2.5 px-4 mr-6 items-center justify-center text-sm font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200"
+                  className="inline-flex py-3 px-5 mr-6 items-center justify-center text-sm font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200 touch-manipulation"
                   to={getRouteByName('login')}
                   onClick={closeMobileNav}
                 >
